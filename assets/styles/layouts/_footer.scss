@@ -1,0 +1,68 @@
+	
+/************************************************************************/
+// footer
+/************************************************************************/
+
+.footer-bar{
+	border-top: 2px solid $dblue;
+	background-color: $negrito;
+	padding: 2em 0;
+	color: #dddbdb;
+	font-size: 0.8em;
+	section.info-menu{
+		display: none;
+		@media(min-width: $screen-sm-min){
+			display: block;
+			padding: 1em 0;
+			h3{
+				display: none;
+			}
+			ul{
+				padding: 0;
+				margin: 0 0 0 1em;
+				text-align: center;
+				li{
+					display: inline;
+					margin: 0 0.5em;
+					a{
+						color: $mamon;
+						padding: 10px;
+						display: inline-block;
+						margin-bottom: 1em;
+					}
+				}
+			}
+		}
+	}
+	a{
+		color: $mamon;
+	}
+	.leyend{
+		p.uned{
+			text-align: center;
+			padding: 70px 0 0 0;
+			background: url(../images/uned.png) no-repeat center top;
+			
+			@media(min-width: $screen-sm-min){
+				text-align: left;
+				padding: 1em 0 2em 70px;
+				background: url(../images/uned.png) no-repeat left center;
+				height: 65px;
+			}
+		}
+		
+		.loguito{
+			//
+		}
+	}
+	.copy{
+		border-top: 1px solid $dblue;
+		padding-top: 1em;
+		margin-top: 1em;
+		text-align: center;
+		.licencia{
+			font-size: 0.8em;
+		}	
+	}
+	
+}

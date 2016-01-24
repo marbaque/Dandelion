@@ -1,0 +1,54 @@
+.navbar{
+	margin-bottom: 0!important;
+	font-size: 0.8em;
+	background-color: #fff;
+	text-shadow: none;
+	z-index: 99;
+	@include radius(0);
+    @media (min-width: $screen-sm-min){
+      height: 100px!important;
+      @include whitie(0.85);
+      z-index: 99;
+    }
+	.navbar-brand{
+		@include text-hide;
+		background: url(../images/logo-desktop-sm.png) no-repeat;
+		background: url(../images/logo-sm.svg) no-repeat;
+		background-size: 200px, 31px;
+    width: 200px;
+    height: 31px;
+    margin-top: 16px;
+    margin-left: 10px;
+    @media (min-width: $screen-sm-min){
+      background: url(../images/logo-lg.png) no-repeat;
+      background: url(../images/logo-lg.svg) no-repeat;
+      width: 270px;
+      height: 80px;
+      margin-top: 6px;
+    }
+	}
+	ul.navbar-nav{
+		@media (min-width: $screen-sm-min){
+			margin-top: 22px;
+			font-weight: 400;
+			li.active a{
+				color: #fff;
+				border-color: $orange;
+				background-color: $mamon;
+			}
+			a{
+				//border: 1px solid $uned;
+				margin: 0 2px;
+				@include radius(4px);
+				color: $negrito;
+				font-weight: 300;
+				transition: 0.5s background;
+				&:hover{
+					color: #fff;
+					border-color: $orange;
+					background-color: $mamon;
+				}
+			}
+		}
+	}
+}
